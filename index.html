@@ -1,0 +1,151 @@
+<!-- CONEXIÓN CON PHP
+<?php
+/*Se realiza la conexión:*/
+$conexion=mysqli_connect('localhost','root','MvcfFa95!','menu');
+?> -->
+
+<!--HTML.-INDEX-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="Dado Plateado" initial-scale="1.0">
+        <meta name="author" content="Andrea Narbona García">
+        <link rel="stylesheet" type="text/css" href="">
+        <link href="stylesheet"><!--Cargar aquí las fuentes de google font-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css"><!--Es importante que nuestra hoja de estilos sea la última, pues recordamos la lectura es en cascada y nuestra hoja es la que tiene prioridad.-->
+        <title>Principal</title>
+    </head>
+    <body>
+        <header id="encabezado" class="">
+            <div id="cajaEncabezado"class="">
+                <div id="cajaBarraNavegacion" class="">
+                    <a href="index.html"> 
+                        <img src="img/LogoNegro.png" alt="Logo Dado Plateado">
+                    </a>
+                    <nav id="navegacion" class="navegacion">
+                        <a href="conocenos.html">Conócenos</a>
+                        <a href="actividades.html">Actividades</a>
+                        <a href="noticias.html">Noticias</a>
+                        <a href="faqs.html">FAQs</a>
+                        <a href="contacto.html">Contacto</a>
+                    </nav>
+                </div>
+                <div id="cajaPresentacion" class="">
+                    <div id=textoEncabezado class="">
+                        <h2>Tu asociación de juegos de<br>mesa y rol</h2>
+                        <h1>DADO PLATEADO</h1>
+                    </div>
+                    <div id="logoEncabezado" class="">
+                        <a href="index.html"> 
+                            <img src="img/LogoBlanco.png" alt="Logo Dado Plateado">
+                        </a>
+                        <button type="button">INICIO DE SESIÓN</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="redes">
+            <a href="#"><img src="img/twitter.png" alt="Twitter" ></a>
+            <a href="#"><img src="img/facebook.png" alt="Facebook"></a> 
+            <a href="#"><img src="img/insta.png" alt="Instragram" ></a>
+        </div>
+        <section id="quienesSomos">
+            <a href=conocenos.html>
+                <h2>¿Quiénes somos?</h2>
+            </a>
+            <p>Dado Plateado es una Asociación Juvgenil que nace con el objetivo de promover actividades de ocio alternativo entre los jóvenes mediante los juegos de mesa y rol.</p>
+            <div id="cuadroJuntales"> <!--Sería guay darle dinamismo, al pasar el cursor por los juntales-->
+                <div id="juntal1">
+                    <img src="img/juntal1.jpg" alt="Juntal 1">
+                </div>
+                <div id="juntal2">
+                    <img src="img/juntal1.jpg" alt="Juntal 2">
+                </div>
+                <div id="juntal3">
+                    <img src="img/juntal1.jpg" alt="Juntal 3">
+                </div>
+                <div id="juntal4">
+                    <img src="img/juntal1.jpg" alt="Juntal 4">
+                </div>
+            </div>
+        </section>
+        <section id="queHacemos">
+            <a href=actividades.html>
+                <h2>¿Qué hacemos?</h2>
+            </a>
+            <div id="cuadroActividades"> 
+                <a href=><!--Incluir la zona de juegos-->
+                    <div id="juegos">
+                        <h2>JUEGOS</h2>
+                        <img src="img/juegosPrincipal.png" alt="Icono Juegos">
+                    </div>
+                </a>
+                <a href=><!--Incluir la zona de rol-->
+                    <div id="rol">
+                        <h2>ROL</h2>
+                        <img src="img/rolPrincipal.png" alt="Icono Rol">
+                    </div>
+                </a>
+                <a href=><!--Incluir la zona de sies-->
+                    <div id="actividades">
+                        <h2>ACTIVIDADES</h2>
+                        <img src="img/actividadesPrincipal.png" alt="Icono Actividades">
+                    </div>
+                </a>
+                <a href=><!--Incluir la zona de eventos-->
+                    <div id="eventos">
+                        <h2>EVENTOS</h2>
+                        <img src="img/eventosPrincipal.png" alt="Icono Eventos">
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="noticias">
+            <div id=cuadroNoticias>
+                <h3>Si quieres estar al tanto...</h3>
+                <button type="button" href="noticias.html">ICONO</button> 
+                <button type="button" href="">SUSCRÍBETE</button> <!--Funcionalidad-->
+            <div>
+        </section>
+
+        <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.7461963083083!2d-6.044433084694578!3d37.34851697983935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126d199c54f297%3A0x35cb71234c347986!2sCasa%20De%20La%20Juventud!5e0!3m2!1ses!2ses!4v1618330007050!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+       <footer id="piePagina" class="">
+            <div id=arribaPiePagina>
+                <div>
+                    <img src="img/ubicacion.png" alt="Ubicación">
+                    <p>Casa de la Juventud<br>Mairena del Aljarafe<br>Sevilla</p>
+                </div>
+                <div>
+                    <img src="img/arroba.png" alt="Correo electrónico">
+                    <p>ajdadoplateado@gmail.com</p><!--Meter la funcionalidad al clicar-->
+                </div>
+                <div>
+                    <img src="img/telefono.png" alt="Teléfono">
+                    <p>666 666 666</p>
+                    <p>999 999 999</p>
+                </div>
+            </div>
+            <div id=abajoPiePagina>
+                <div id="redesSociales">
+                    <img src="img/twitter.png" alt="Twitter" href="https://twitter.com/DadoPlateado">
+                    <img src="img/facebook.png" alt="Facebook" href="https://www.facebook.com/Dado-Plateado-212051972703768/">
+                    <img src="img/insta.png" alt="Instragam" href="https://www.instagram.com/dadoplateado/?hl=es">
+                </div>
+                <div id="copyright">
+                    <p>&copy; Todos los Derechos Reservados 2021</p>
+                </div>
+                <div>
+                    <a href="index.html"> 
+                        <img src="img/LogoNegro.png" alt="Logo Dado Plateado">
+                    </a>
+                    <p>Dado Plateado</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
