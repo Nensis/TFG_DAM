@@ -1,0 +1,131 @@
+/*Se definen la paleta de colores con un pseudoselector root:*/
+:root{
+    --gris1: #333333;
+    --gris2:#B8B5B5;
+    --azul1: #01A1C9;
+    --azul2: #67C7DF;
+    --blanco: #FFFFFF;
+}
+
+
+
+html{
+    font-size: 62,5%; /*Accesibilidad rem*/
+}
+/*De aplicación general en todo el documento*/
+body{
+    font-size: 16px; /*Accesibilidad rem*/
+    font-family: 'Tajawal', sans-serif;
+}
+
+.barra{
+    background-color: var(--gris1);
+    height:2rem;
+}
+
+
+.cajaNavegacion{
+    background-color: var(--blanco);
+    height: 5rem;
+    margin: 1rem 2rem 1rem 2rem;
+    display:flex;
+    justify-content:space-between;
+}
+
+.cajaLogo{
+    display:flex;
+    justify-content:space-between;
+}
+
+.imgDadoGris{
+    padding: 0 1rem 0 2rem;
+    width: 10rem;
+}
+
+.letrasLogo a{
+    text-decoration: none;
+    font-family: 'Bodoni Moda', serif;
+    color: var(--gris1);
+    font-size: 1.5rem;
+}
+
+.navegacionPrincipal{
+    width:60rem;
+    display:flex;
+    justify-content:space-around;
+    padding-top:4rem;
+}
+.navegacionPrincipal  a{
+    color: var(--gris1);
+    font-size:1.2rem;
+    font-weight: 500;
+    text-decoration: none;   
+}
+
+.cajaPresentacion{
+    background-image: url("../img/fondo1a.png");
+    background-size:cover;
+    height: 45rem;
+    margin-top: 2rem;
+    display:flex;
+    justify-content:space-between;
+    /* filter: brightness(0.5); */
+}
+
+.textoEncabezado h1{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 6.5rem;
+    color: var(--blanco);
+    padding: 2rem 0 0 4rem;
+}
+
+h1 p{
+    color: var(--gris1);
+    padding-top: 0rem;
+    margin-top: 0rem;
+}
+
+.textoEncabezado h2{
+    font-size: 4.5rem;
+    color: var(--blanco);
+    padding: 2rem 5rem 0 4rem;
+}
+
+.cajaLogoSesion{
+    display:flex;
+    flex-direction: column;  
+}
+
+.cajaLogoBlanco{
+    width: 60rem;
+    justify-content: center;
+    padding: 5rem 10rem 0 10rem; 
+}
+
+.imgDadoBlanco{
+    width: 45rem;
+    padding: 5rem 10rem 0 10rem;
+}
+
+.cajaInicioSesion{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    /* padding-top: 5.5rem; */
+}
+
+button {
+    background-color: var(--blanco);
+    color: var(--gris1);
+    font-size:2rem;
+    text-align: center;
+    padding: 0.8rem;
+    border:0.1rem;
+    border-radius: 0.2rem;
+    
+}
+
+.btn1:hover{
+    background-color: var(--azul2);
+    color:var (--blanco);
+}

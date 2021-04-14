@@ -12,37 +12,57 @@ $conexion=mysqli_connect('localhost','root','MvcfFa95!','menu');
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="Dado Plateado" initial-scale="1.0">
         <meta name="author" content="Andrea Narbona García">
-        <link rel="stylesheet" type="text/css" href="">
-        <link href="stylesheet"><!--Cargar aquí las fuentes de google font-->
+        <link rel="preload" href="css/normalize.css" as="estilos">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/styles.css"><!--Es importante que nuestra hoja de estilos sea la última, pues recordamos la lectura es en cascada y nuestra hoja es la que tiene prioridad.-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Tajawal:wght@200;300;500&display=swap" rel="stylesheet"> 
+        <link rel="preload" href="css/estilos.css" as="estilos">
+        <link rel="stylesheet" href="css/estilos.css">
         <title>Principal</title>
     </head>
     <body>
-        <header id="encabezado" class="">
-            <div id="cajaEncabezado"class="">
-                <div id="cajaBarraNavegacion" class="">
-                    <a href="index.html"> 
-                        <img src="img/LogoNegro.png" alt="Logo Dado Plateado">
-                    </a>
-                    <nav id="navegacion" class="navegacion">
-                        <a href="conocenos.html">Conócenos</a>
-                        <a href="actividades.html">Actividades</a>
-                        <a href="noticias.html">Noticias</a>
+        <div class="barra">
+        </div>
+        <header class="encabezado">
+            <div class="cajaEncabezado">
+                <div class="cajaNavegacion">
+                    <div class="cajaLogo">    
+                        <div class="dibujoLogo">
+                            <a class="enlaceLogo" href="index.html" > 
+                                <img class="imgDadoGris" src="img/LogoGris.png" alt="Logo Dado Plateado">
+                            </a>
+                        </div>
+                        <div class="letrasLogo">
+                            <a class="enlaceLetrasLogo" href="index.html"> 
+                                <p class="dadoGris">DADO<br> PLATEADO</p>
+                            </a>
+                        </div>
+                    </div>
+                    <nav class="navegacionPrincipal">
+                        <a href="conocenos.html">CONÓCENOS</a>
+                        <a href="actividades.html">ACTIVIDADES</a>
+                        <a href="noticias.html">NOTICIAS</a>
                         <a href="faqs.html">FAQs</a>
-                        <a href="contacto.html">Contacto</a>
+                        <a href="contacto.html">CONTACTO</a>
                     </nav>
                 </div>
-                <div id="cajaPresentacion" class="">
-                    <div id=textoEncabezado class="">
-                        <h2>Tu asociación de juegos de<br>mesa y rol</h2>
-                        <h1>DADO PLATEADO</h1>
+                
+                <div class="cajaPresentacion">
+                    <div class=textoEncabezado>
+                        <h2>Tu asociación de <br>juegos de mesa y rol</h2>
+                        <h1>DADO<p>PLATEADO</p></h1>
                     </div>
-                    <div id="logoEncabezado" class="">
-                        <a href="index.html"> 
-                            <img src="img/LogoBlanco.png" alt="Logo Dado Plateado">
-                        </a>
-                        <button type="button">INICIO DE SESIÓN</button>
+                    <div class="cajaLogoSesion">
+                        <div class="cajaLogoEncabezado">
+                            <a class="enlaceLogoEncabezado" href="index.html"> 
+                                <img class="imgDadoBlanco" src="img/LogoBlanco.png" alt="Logo Dado Plateado">
+                            </a>
+                        </div>
+                        <div class="cajaInicioSesion">
+                            <button class="btn1" type="button">INICIO DE SESIÓN</button>
+                            <!-- <button></button><button></button><button></button><button></button> -->
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -125,7 +145,7 @@ $conexion=mysqli_connect('localhost','root','MvcfFa95!','menu');
                     <p>ajdadoplateado@gmail.com</p><!--Meter la funcionalidad al clicar-->
                 </div>
                 <div>
-                    <img src="img/telefono.png" alt="Teléfono">
+                    <img src="img/movil.png" alt="Teléfono">
                     <p>666 666 666</p>
                     <p>999 999 999</p>
                 </div>
@@ -141,9 +161,9 @@ $conexion=mysqli_connect('localhost','root','MvcfFa95!','menu');
                 </div>
                 <div>
                     <a href="index.html"> 
-                        <img src="img/LogoNegro.png" alt="Logo Dado Plateado">
+                        <img class="logoNegro" src="img/LogoNegro.png" alt="Logo Dado Plateado">
                     </a>
-                    <p>Dado Plateado</p>
+                    <p class="dadoBlanco">Dado Plateado</p>
                 </div>
             </div>
         </footer>
