@@ -4,6 +4,7 @@
     --gris2:#B8B5B5;
     --azul1: #01A1C9;
     --azul2: #67C7DF;
+    --azul3:#1771a8; 
     --blanco: #FFFFFF;
 }
 
@@ -30,30 +31,40 @@ body{
     margin: 1rem 2rem 1rem 2rem;
     display:flex;
     justify-content:space-between;
+    align-items: flex-end;
 }
 
 .cajaLogo{
     display:flex;
     justify-content:space-between;
+    align-items: flex-end;
+    padding-left: 3.5rem;
 }
 
-.imgDadoGris{
+.dibujoLogo img{
     padding: 0 1rem 0 2rem;
-    width: 10rem;
-}
+    width: 8rem; 
+} 
 
 .letrasLogo a{
     text-decoration: none;
     font-family: 'Bodoni Moda', serif;
     color: var(--gris1);
     font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.dadoGris{
+    display: flex;
+    align-items: flex-end;
 }
 
 .navegacionPrincipal{
     width:60rem;
     display:flex;
     justify-content:space-around;
-    padding-top:4rem;
+    align-items: end;
 }
 .navegacionPrincipal  a{
     color: var(--gris1);
@@ -62,59 +73,71 @@ body{
     text-decoration: none;   
 }
 
+.navegacionPrincipal  a:hover{
+
+text-decoration: underline;
+}
 .cajaPresentacion{
     background-image: url("../img/fondo1a.png");
     background-size:cover;
     height: 45rem;
     margin-top: 2rem;
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
     /* filter: brightness(0.5); */
+}
+
+.textoEncabezado{
+    display:flex;
+    justify-content:space-around;
+    align-items:space-between;
+    flex-direction: column;
+    
 }
 
 .textoEncabezado h1{
     font-family: 'Bodoni Moda', serif;
-    font-size: 6.5rem;
+    font-size: 6rem;
     color: var(--blanco);
-    padding: 2rem 0 0 4rem;
+    padding-bottom: 3rem;
+  
 }
 
 h1 p{
     color: var(--gris1);
-    padding-top: 0rem;
     margin-top: 0rem;
 }
 
 .textoEncabezado h2{
     font-size: 4.5rem;
     color: var(--blanco);
-    padding: 2rem 5rem 0 4rem;
 }
 
 .cajaLogoSesion{
     display:flex;
-    flex-direction: column;  
+    flex-direction: column; 
+    justify-content: space-around;
+    align-items: center; 
 }
 
 .cajaLogoBlanco{
-    width: 60rem;
     justify-content: center;
-    padding: 5rem 10rem 0 10rem; 
+    align-items: center;
 }
 
 .imgDadoBlanco{
-    width: 45rem;
-    padding: 5rem 10rem 0 10rem;
+    width: 50rem;
+    padding: 0 0 0 0;
+    margin:0 0 0 0;
 }
 
 .cajaInicioSesion{
     display: flex;
     justify-content:center;
     align-items:center;
-    /* padding-top: 5.5rem; */
 }
 
-button {
+.btn1 {
     background-color: var(--blanco);
     color: var(--gris1);
     font-size:2rem;
@@ -122,10 +145,10 @@ button {
     padding: 0.8rem;
     border:0.1rem;
     border-radius: 0.2rem;
-    
 }
 
 .btn1:hover{
-    background-color: var(--azul2);
-    color:var (--blanco);
+    background-color: var(--azul3);
+    color: var(--blanco);
 }
+
